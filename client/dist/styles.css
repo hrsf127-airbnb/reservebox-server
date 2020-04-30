@@ -1,0 +1,33 @@
+.bttn {
+  height: 40px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+.bttn--reserveColor {
+  background-image: radial-gradient(circle at center center, rgb(255, 56, 92) 0%, rgb(230, 30, 77) 27.5%, rgb(227, 28, 95) 40%, rgb(215, 4, 102) 57.5%, rgb(189, 30, 89) 75%, rgb(189, 30, 89) 100%);
+}
+
+.bttn__responsive {
+  background-position: calc(var(--mouse-x)) calc(var(--mouse-y));
+}
+
+#reserveNowButton {
+  cursor: pointer;
+  border-radius: 8px;
+  /* transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s; */
+  width: 300px; /*TODO change later */
+}
+
+.reserveNowButtonText {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
