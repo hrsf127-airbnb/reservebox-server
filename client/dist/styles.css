@@ -1,6 +1,6 @@
 .bttn {
   height: 40px;
-  width: 500px;
+  width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,21 +12,31 @@
   background-image: radial-gradient(circle at center center, rgb(255, 56, 92) 0%, rgb(230, 30, 77) 27.5%, rgb(227, 28, 95) 40%, rgb(215, 4, 102) 57.5%, rgb(189, 30, 89) 75%, rgb(189, 30, 89) 100%);
 }
 
+.bttn__responsive:hover {
+  background-position: calc(var(--mouseX) + 100px);
+}
+
 .bttn__responsive {
-  background-position: calc(var(--mouse-x)) calc(var(--mouse-y));
+  background-position: 140px;
+  transition: background-position  1.25s ease 0s !important;
+  transition-property: background-position !important;
+  transition-duration: background-position  1.25s !important;
+  transition-timing-function: background-position ease !important;
+  transition-delay: background-position  0s !important;
+
+
 }
 
 #reserveNowButton {
   cursor: pointer;
-  border-radius: 8px;
-  /* transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s; */
-  width: 300px; /*TODO change later */
+  border-radius: 6px;
+  width: 200px; /*TODO change later */
 }
 
 .reserveNowButtonText {
   font-family: 'Roboto', sans-serif;
   color: white;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 20px;
   font-weight: 500;
   cursor: pointer;

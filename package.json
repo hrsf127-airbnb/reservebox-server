@@ -9,7 +9,10 @@
   "scripts": {
     "build": "webpack --mode production",
     "babel-build": "babel client/src --watch -d lib",
-    "start": "nodemon server/server.js"
+    "start": "nodemon server/server.js",
+    "schemaCreateSeed": "mysql -u root -p < schema.sql",
+    "jsExecuteSeed": "node seed.js",
+    "seed": "npm run schemaCreateSeed && npm run jsExecuteSeed"
   },
   "dependencies": {
     "react": "^16.13.1",
