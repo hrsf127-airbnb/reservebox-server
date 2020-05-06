@@ -1,16 +1,22 @@
 import React from 'react';
 import ReserveNowButton from './reserveNowButton.jsx';
+import Slider from './slider.jsx';
+
 
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {date: new Date()};
+    this.state = {
+      date: new Date()
+
+    };
   }
 
   render() {
     return (
       <div>
-        <ReserveNowButton />
+        <Slider />
+        {/* <ReserveNowButton /> */}
       </div>
     );
   }

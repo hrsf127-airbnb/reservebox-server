@@ -41,3 +41,58 @@
   font-weight: 500;
   cursor: pointer;
 }
+
+.calendar {
+  border: solid 1px purple;
+  width: 233px;
+  margin: 0 15px 0 15px;
+}
+
+#weekdayshort {
+  border: solid 1px red;
+  width: 30px;
+  height: 30px;
+}
+
+#calWrapper {
+  border: solid 1px purple;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  width: 233px;
+  padding: 0px;
+}
+
+#blankDay, #filledDay {
+  border: solid 1px blue;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+}
+
+#monthName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  border: solid 1px black;
+  height: 100%;
+  width: 526px; /* to display two calendars at once */
+  /* margin: 0 auto; */
+  /* overflow: hidden; */
+}
+
+.sliderContent {
+  border: solid 1px red;
+  height: 100%;
+  /* width: 3000px; */
+  display: flex;
+  flex-direction: row;
+
+}
