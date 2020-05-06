@@ -31,6 +31,7 @@ export default class SliderContent extends React.Component {
     // render that calendar inside sliderContent
     const eachMonth = this.renderEachMonth().map(dateObject =>
       <Calendar dateObject = {dateObject}/>)
+      
     return (
       <div className = "sliderContent">
         {eachMonth}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1588733923537" clover="3.2.0">
+  <project timestamp="1588733923537" name="All files">
+    <metrics statements="42" coveredstatements="42" conditionals="0" coveredconditionals="0" methods="14" coveredmethods="14" elements="56" coveredelements="56" complexity="0" loc="42" ncloc="42" packages="1" files="3" classes="3"/>
+    <file name="calendar.jsx" path="/Users/luke/reservebox-client/client/src/components/calendar.jsx">
+      <metrics statements="25" coveredstatements="25" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="8"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="8" count="13" type="stmt"/>
+      <line num="9" count="13" type="stmt"/>
+      <line num="14" count="13" type="stmt"/>
+      <line num="15" count="52" type="stmt"/>
+      <line num="16" count="52" type="stmt"/>
+      <line num="19" count="52" type="stmt"/>
+      <line num="22" count="13" type="stmt"/>
+      <line num="23" count="13" type="stmt"/>
+      <line num="24" count="13" type="stmt"/>
+      <line num="25" count="39" type="stmt"/>
+      <line num="29" count="13" type="stmt"/>
+      <line num="32" count="13" type="stmt"/>
+      <line num="33" count="13" type="stmt"/>
+      <line num="34" count="13" type="stmt"/>
+      <line num="35" count="13" type="stmt"/>
+      <line num="36" count="396" type="stmt"/>
+      <line num="42" count="13" type="stmt"/>
+      <line num="49" count="13" type="stmt"/>
+      <line num="50" count="91" type="stmt"/>
+      <line num="53" count="13" type="stmt"/>
+      <line num="54" count="39" type="stmt"/>
+      <line num="57" count="13" type="stmt"/>
+      <line num="58" count="396" type="stmt"/>
+      <line num="61" count="13" type="stmt"/>
+    </file>
+    <file name="slider.jsx" path="/Users/luke/reservebox-client/client/src/components/slider.jsx">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+    </file>
+    <file name="sliderContent.jsx" path="/Users/luke/reservebox-client/client/src/components/sliderContent.jsx">
+      <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="19" count="12" type="stmt"/>
+      <line num="20" count="12" type="stmt"/>
+      <line num="21" count="12" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
+      <line num="33" count="12" type="stmt"/>
+      <line num="35" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
