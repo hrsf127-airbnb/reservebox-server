@@ -6,7 +6,7 @@ var connection = mysql.createConnection({
   database: 'seedDB'
 });
 
-connection.connect();
+connection.connect(() => console.log("Connected to database"));
 
 var propsSQL = "INSERT INTO properties (id, maxChildren, maxAdults, maxInfants, rating, reviewAmount, nightPrice, cleaningFee, serviceFee, discount) VALUES ?";
 
@@ -17,6 +17,10 @@ var bookingsSQL = "INSERT INTO bookings (id, checkIn, checkOut) VALUES ?";
 
 function rand(min, max) {
   return Math.floor(Math.random() * (max - min) + min);
+}
+
+function randFloat(min, max) {
+  return (Math.random() * (max - min) + min).toFixed(2);
 }
 
 
@@ -45,7 +49,7 @@ function rand(min, max) {
 var values = [];
 
 for (var i = 0; i < 100; i++) {
-  values.push([rand(10000, 99999), rand(0, 3), rand(2, 11), rand(0, 2), rand(3, 5), rand(50, 400), rand(50, 400), rand(30, 200), rand(30, 300), rand(.10, .40)]);
+  values.push([rand(10000, 99999), rand(0, 3), rand(2, 11), rand(0, 2), randFloat(3, 5), rand(50, 400), rand(50, 400), rand(30, 200), rand(30, 300), rand(.10, .40)]);
 }
 
 
