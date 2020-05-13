@@ -6,6 +6,8 @@ import styled from 'styled-components';
 import dateParse from './dateParse.js';
 import DropDown from './dropDown.jsx';
 import $ from "jquery";
+const port = 3000;
+
 
 const AppBox = styled.div`
   display: flex;
@@ -167,7 +169,7 @@ class App extends React.Component {
 
   componentDidMount() {
     $.ajax({
-      url: `/getInitialData/${Math.floor(Math.random()*100)}`,
+      url: `http://localhost:${port}/getInitialData/${Math.floor(Math.random()*100)}`,
       type: 'GET',
       success: (res) => {
           this.setState({
@@ -212,7 +214,7 @@ class App extends React.Component {
   reserveClickHandler() {
 
     $.ajax({
-      url: `/recordDates`,
+      url: `http://localhost:${port}/recordDates`,
       type: 'POST',
       data: {
         dateOne: this.state.dateStringOne,
